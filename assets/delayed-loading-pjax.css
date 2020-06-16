@@ -2,6 +2,7 @@
 
 .delayed-loading-pjax-progress {
     position: relative;
+    min-height: 40px;
 }
 
 .delayed-loading-pjax-progress-wrapper {

@@ -17,6 +17,7 @@ use yii\helpers\Json;
  */
 class Pjax extends YiiPjax
 {
+    public $hideContentOnPageLoad = false;
     /**
      * @var string
      */
@@ -38,10 +39,17 @@ class Pjax extends YiiPjax
             </div>
             <div class="delayed-loading-pjax-content-wrapper">
         <?php
+        ob_start();
     }
 
     public function run()
     {
+        $content = ob_get_clean();
+        if (!$this->hideContentOnPageLoad ||
+            $this->requiresPjax()
+        ) {
+            echo $content;
+        }
         ?>
             </div>
         <?php
