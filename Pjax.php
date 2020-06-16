@@ -32,7 +32,13 @@ class Pjax extends YiiPjax
         ?>
             <div class="delayed-loading-pjax-progress-wrapper">
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 100%">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                         role="progressbar"
+                         aria-valuenow="100"
+                         aria-valuemin="0"
+                         aria-valuemax="100"
+                         style="width: 100%"
+                    >
                         <span>Loading...</span>
                     </div>
                 </div>

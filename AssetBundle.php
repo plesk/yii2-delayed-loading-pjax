@@ -4,7 +4,9 @@
 namespace plesk\delayedloadingpjax;
 
 use yii\web\AssetBundle as YiiAssetBundle;
-
+use yii\web\JqueryAsset;
+use yii\bootstrap4\BootstrapAsset;
+use yii\widgets\PjaxAsset;
 
 class AssetBundle extends YiiAssetBundle
 {
@@ -13,8 +15,8 @@ class AssetBundle extends YiiAssetBundle
         'delayed-loading-pjax.css',
     ];
     public $depends = [
-        'yii\web\JqueryAsset',
-        'yii\bootstrap\BootstrapAsset',
-        'yii\widgets\PjaxAsset',
+        JqueryAsset::class,
+        BootstrapAsset::class,
+        PjaxAsset::class,
     ];
 }
