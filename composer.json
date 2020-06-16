@@ -1,10 +1,10 @@
 {
     "name": "plesk/yii2-delayed-loading-pjax",
     "description": "Plesk extension for Yii2 framework to load content via pjax after opening the page.",
-    "homepage": "http://www.plesk.com",
+    "homepage": "https://github.com/plesk/yii2-delayed-loading-pjax",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","plesk","widget","pjax"],
-    "license": "proprietary",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Dmitrii Shiriaev",
