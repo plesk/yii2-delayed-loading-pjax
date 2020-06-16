@@ -90,7 +90,8 @@ class Pjax extends YiiPjax
 
         $options = Json::htmlEncode($this->clientOptions);
         $this->view->registerJs(
-            'jQuery.pjax.reload(' . $options . ');'
+            'jQuery.pjax.reload(' . $options . ');
+                $.pjax.xhr = null;' // allow multiple pjax requests simultaneously
         );
     }
 }
